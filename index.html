@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saugat Rijal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: #007bff;
+        }
+
+        .animated-button {
+            background: linear-gradient(45deg, #007bff, #00ff88);
+            background-size: 200% auto;
+            transition: 0.5s;
+        }
+
+        .animated-button:hover {
+            background-position: right center;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Saugat Rijal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3">Saugat Rijal</h1>
+            <h2 class="h4 mb-4">IT Student And Hungry to Learn more</h2>
+            <a href="#contact" class="btn btn-primary btn-lg px-5 py-3 animated-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5 fade-in">My Services</h2>
+            <div class="row g-14">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Help people to learn</h3>
+                        <p class="card-text">Comprehensive computer education covering fundamental concepts to advanced
+                            technologies with practical learning approach.</p>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- About & Contact Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-21 fade-in">
+                    <h2 style="text-align:center; color:#222; font-size:24px;" class="section-title mb-4">About Me</h2>
+                    <p class="lead">Hi, I’m Saugat Rijal, a tech enthusiast from Nepal with a strong interest in cybersecurity and programming. I have completed my high school education in the science faculty with computer science as a major subject. I enjoy learning new technologies and continuously improving my skills in the IT field. Currently, I am focused on building a strong foundation in programming and cybersecurity step by step. My goal is to become a skilled cybersecurity engineer and contribute to the growth of the tech community in Nepal.</p>
+                </div>
+                <div class="col-lg-15 fade-in">
+                    <h2 style="text-align:center; color:#222; font-size:24px;" class="section-title mb-4">Contact</h2>
+                     <h1>Get In Touch</h1>
+<p>Contact me if needed through following social media link also you can fill the form below.</p>
+
+ <div class="social-links mt-4">            
+ 
+   <a href="https://www.facebook.com/saugat.rijal.538929 " target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" 
+       alt="Facebook" width="30" height="30">
+</a>
+ <a href="https://www.instagram.com/saugat_rijal7/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" 
+         alt="Instagram" width="30" height="30">
+  </a>
+ </div>
+</section>
+
+<div style="display:flex; justify-content:center; align-items:center; padding:50px 20px; background-color:#f2f2f2;">
+    <form action="https://formspree.io/f/mayvndqp" method="POST" 
+          style="background-color:white; padding:30px 25px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15); width:100%; max-width:400px; font-family:Arial, sans-serif;">
+      
+      <h2 style="text-align:center; margin-bottom:20px; color:#333;">Contact Me</h2>
+      
+      <input type="text" name="name" placeholder="Your Name" required
+             style="width:100%; padding:12px 10px; margin:8px 0; border-radius:6px; border:1px solid #ccc; font-size:14px; box-sizing:border-box;">
+      
+      <input type="email" name="_replyto" placeholder="Your Email" required
+             style="width:100%; padding:12px 10px; margin:8px 0; border-radius:6px; border:1px solid #ccc; font-size:14px; box-sizing:border-box;">
+      
+      <input type="text" name="subject" placeholder="Subject" required
+             style="width:100%; padding:12px 10px; margin:8px 0; border-radius:6px; border:1px solid #ccc; font-size:14px; box-sizing:border-box;">
+      
+      <textarea name="message" placeholder="Your Message" rows="5" required
+                style="width:100%; padding:12px 10px; margin:8px 0; border-radius:6px; border:1px solid #ccc; font-size:14px; box-sizing:border-box;"></textarea>
+      
+      <button type="submit"
+              style="width:100%; padding:12px; margin-top:12px; border:none; border-radius:6px; background-color:#4CAF50; color:white; font-size:16px; cursor:pointer;">
+        Send Message
+      </button>
+    </form>
+  </div>
+ 
+
+               
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Saugat Rijal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
